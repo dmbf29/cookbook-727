@@ -20,4 +20,8 @@ class View
     print '> '
     gets.chomp.to_i - 1
   end
+
+  def tell_user_importing(recipe)
+    puts "Importing \"#{recipe.name}\"..."
+  end
 end

@@ -12,7 +12,7 @@ class ScrapeAllrecipesService
     # file = File.join(__dir__, 'donut.html')  # or 'strawberry.html'
     url = "https://www.allrecipes.com/search/results/?search=#{@ingredient}"
     html = URI.open(url).read
-    doc = Nokogiri::HTML(html, nil, 'utf-8')
+    doc = Nokogiri::HTML(html)
     doc.search('.card__detailsContainer').first(5).map do |card_element|
       name = card_element.search('.card__title').text.strip
       description = card_element.search('.card__summary').text.strip
@@ -30,7 +30,7 @@ class ScrapeAllrecipesService
 
   def fetch_prep_time(url)
     html = URI.open(url).read
-    doc = Nokogiri::HTML(html, nil, 'utf-8')
+    doc = Nokogiri::HTML(html)
     doc.search('.recipe-meta-item-body').first.text.strip
   end
 end

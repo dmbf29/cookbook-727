@@ -59,6 +59,7 @@ class Controller
     # get the one recipe with the index
     recipe = recipes[index]
     # give the recipe to the cookbook
+    @view.tell_user_importing(recipe)
     @cookbook.add_recipe(recipe)
   end
 
