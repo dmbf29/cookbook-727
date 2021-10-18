@@ -1,3 +1,8 @@
-boeuf bourguignon,red wine stew
-Galym's ultra famous horse meat sausage,you take horse meat and uh stuffed into horse intestines
-apple pie,pie with apples
+name,description,rating,done,prep_time
+boeuf bourguignon,red wine stew,,true,
+Galym's ultra famous horse meat sausage,you take horse meat and uh stuffed into horse intestines,,false,
+apple pie,pie with apples,,false,
+Grillswith (Donut Happiness),This recipe is so delicious.  It is essentially a sundae served on top of a grilled donut.  I created this after having it at a restaurant. This is also good with strawberry or cinnamon ice cream.,,false,
+spaghetti,pasta with sauce,5,false,
+Funfetti® Donut Holes,"A favorite, classic cake flavor turned into a donut. Serve while warm.",4,true,
+Barbara's Chocolate Jello,"Easy, delicious, and great for last-minute plans.",5,false,10 mins

@@ -3,13 +3,14 @@ class View
     puts '=' * 40
     puts 'Here are your recipes:'
     recipes.each_with_index do |recipe, index|
-      puts "#{index + 1} | #{recipe.name} - #{recipe.description}"
+      x_mark = recipe.done? ? "X" : " "
+      puts "#{index + 1} | [#{x_mark}] | #{recipe.name} - #{recipe.description} -\nRating: #{recipe.rating} | Prep Time: #{recipe.prep_time}"
     end
     puts '=' * 40
   end
 
   def ask_for(something)
-    puts "What is the #{something} of your recipe?"
+    puts "What is the #{something}?"
     print '> '
     gets.chomp
   end
